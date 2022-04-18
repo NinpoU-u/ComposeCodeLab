@@ -416,10 +416,10 @@ fun Backdrop(
                 modifier = Modifier.padding(top = 12.dp, bottom = 32.dp),
                 backdropRevealed = backdropRevealed,
                 activeCategory = activeCategory,
-                onMenuSelect = {
+                onMenuSelect = { selectedCategory ->
                     backdropRevealed = false
                     onBackdropReveal(false)
-                    activeCategory = it
+                    activeCategory = selectedCategory
                     scope.launch { scaffoldState.conceal() }
                 }
             )

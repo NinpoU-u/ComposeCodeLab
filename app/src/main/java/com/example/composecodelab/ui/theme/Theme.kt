@@ -6,6 +6,7 @@ import androidx.compose.material.darkColors
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
+import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 // Same as Light for now
 private val ShrineDarkColorPalette = darkColors(
@@ -41,9 +42,18 @@ fun ShrineTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {
+    val systemUiController = rememberSystemUiController()
+    val useDarkIcons = MaterialTheme.colors.isLight
+
     val colors = if (darkTheme) {
+        systemUiController.setSystemBarsColor(
+            color = Color.Transparent
+        )
         ShrineDarkColorPalette
     } else {
+        systemUiController.setSystemBarsColor(
+            color = ShrinePink50
+        )
         ShrineLightColorPalette
     }
 
