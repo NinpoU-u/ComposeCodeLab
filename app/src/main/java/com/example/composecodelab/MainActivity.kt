@@ -26,13 +26,13 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.composecodelab.ui.theme.ComposeCodeLabTheme
+import com.example.composecodelab.ui.theme.ShrineTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            ComposeCodeLabTheme {
+            ShrineTheme {
                 MyApp()
             }
         }
@@ -152,7 +152,7 @@ private fun CardContent(name: String) {
 @Preview(showBackground = true, widthDp = 320)
 @Composable
 fun DefaultPreview() {
-    ComposeCodeLabTheme {
+    ShrineTheme {
         Greetings()
     }
 }
@@ -160,7 +160,7 @@ fun DefaultPreview() {
 @Preview(showBackground = true, widthDp = 320, heightDp = 320)
 @Composable
 fun OnboardingPreview() {
-    ComposeCodeLabTheme {
+    ShrineTheme {
         OnBoardingScreen(onContinueClicked = {}) // Do nothing on click.
     }
 }

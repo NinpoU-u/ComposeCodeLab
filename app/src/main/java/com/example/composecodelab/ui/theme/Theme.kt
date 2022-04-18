@@ -7,38 +7,44 @@ import androidx.compose.material.lightColors
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
-private val DarkColorPalette = darkColors(
-    surface = Blue,
-    onSurface = Navy,
-    primary = Navy,
-    onPrimary = Chartreuse
+// Same as Light for now
+private val ShrineDarkColorPalette = darkColors(
+    primary = ShrinePink100,
+    primaryVariant = ShrinePink500,
+    secondary = ShrinePink50,
+    background = ShrinePink100,
+    surface = ShrinePink10,
+    error = Color(0xffc5032b),
+    onPrimary = ShrinePink900,
+    onSecondary = ShrinePink900,
+    onBackground = ShrinePink900,
+    onSurface = ShrinePink900,
+    onError = ShrinePink10
 )
 
-private val LightColorPalette = lightColors(
-    surface = Blue,
-    onSurface = Color.White,
-    primary = LightBlue,
-    onPrimary = Navy
-
-    /* Other default colors to override
-    background = Color.White,
-    surface = Color.White,
-    onPrimary = Color.White,
-    onSecondary = Color.Black,
-    onBackground = Color.Black,
-    onSurface = Color.Black,
-    */
+internal val ShrineLightColorPalette = lightColors(
+    primary = ShrinePink100,
+    primaryVariant = ShrinePink500,
+    secondary = ShrinePink50,
+    background = ShrinePink100,
+    surface = ShrinePink10,
+    error = Color(0xffc5032b),
+    onPrimary = ShrinePink900,
+    onSecondary = ShrinePink900,
+    onBackground = ShrinePink900,
+    onSurface = ShrinePink900,
+    onError = ShrinePink10
 )
 
 @Composable
-fun ComposeCodeLabTheme(
+fun ShrineTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {
     val colors = if (darkTheme) {
-        DarkColorPalette
+        ShrineDarkColorPalette
     } else {
-        LightColorPalette
+        ShrineLightColorPalette
     }
 
     MaterialTheme(
