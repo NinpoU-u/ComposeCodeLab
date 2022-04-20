@@ -1,4 +1,4 @@
-package com.example.composecodelab.ui.theme
+package com.example.composecodeexamples.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
@@ -6,7 +6,7 @@ import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
-import com.example.composecodelab.R
+import composecodeexamples.R
 
 private val Rubik = FontFamily(
     Font(R.font.rubik_light, FontWeight.Light),

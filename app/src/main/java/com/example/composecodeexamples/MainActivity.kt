@@ -1,4 +1,4 @@
-package com.example.composecodelab
+package com.example.composecodeexamples
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -7,7 +7,7 @@ import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.composecodelab.ui.theme.ShrineTheme
+import com.example.composecodeexamples.ui.theme.ShrineTheme
 
 @OptIn(ExperimentalAnimationApi::class, ExperimentalMaterialApi::class)
 class MainActivity : ComponentActivity() {

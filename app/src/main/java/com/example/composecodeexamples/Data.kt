@@ -1,4 +1,6 @@
-package com.example.composecodelab
+package com.example.composecodeexamples
+
+import composecodeexamples.R
 
 data class ItemData(
     val id: Int,

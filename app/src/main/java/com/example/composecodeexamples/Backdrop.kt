@@ -1,4 +1,4 @@
-package com.example.composecodelab
+package com.example.composecodeexamples
 
 import androidx.compose.animation.*
 import androidx.compose.animation.core.LinearEasing
@@ -25,7 +25,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.composecodelab.ui.theme.ShrineTheme
+import com.example.composecodeexamples.ui.theme.ShrineTheme
+import composecodeexamples.R
 import kotlinx.coroutines.launch
 
 

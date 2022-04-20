@@ -1,4 +1,4 @@
-package com.example.composecodelab.extension
+package com.example.composecodeexamples.extension
 
 import androidx.compose.ui.graphics.Color
 

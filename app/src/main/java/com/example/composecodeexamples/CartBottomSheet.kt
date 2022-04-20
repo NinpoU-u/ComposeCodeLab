@@ -1,4 +1,4 @@
-package com.example.composecodelab
+package com.example.composecodeexamples
 
 import androidx.compose.animation.*
 import androidx.compose.animation.core.*
@@ -25,7 +25,7 @@ import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.example.composecodelab.ui.theme.ShrineTheme
+import com.example.composecodeexamples.ui.theme.ShrineTheme
 import kotlin.math.min
 
 @Composable

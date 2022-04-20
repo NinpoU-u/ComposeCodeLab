@@ -1,4 +1,4 @@
-package com.example.composecodelab
+package com.example.composecodeexamples
 
 import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.foundation.layout.BoxWithConstraints

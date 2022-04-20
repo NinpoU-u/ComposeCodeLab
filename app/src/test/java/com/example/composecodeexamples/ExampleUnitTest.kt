@@ -1,4 +1,4 @@
-package com.example.composecodelab
+package com.example.composecodeexamples
 
 import org.junit.Test
 
